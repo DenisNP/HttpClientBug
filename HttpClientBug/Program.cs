@@ -24,7 +24,7 @@ namespace HttpClientBug
             
             var client = new HttpClient(handler)
             {
-                Timeout = TimeSpan.FromSeconds(10)
+                Timeout = TimeSpan.FromSeconds(30)
             };
             client.DefaultRequestHeaders.Add("Accept", "application/json");
             client.DefaultRequestHeaders.Add("Authorization", "Bearer 1234");
