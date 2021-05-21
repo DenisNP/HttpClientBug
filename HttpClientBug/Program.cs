@@ -10,7 +10,7 @@ namespace HttpClientBug
         public static void Main(string[] args)
         {
             DoRequest();
-            Console.ReadKey();
+            Console.Read();
         }
 
         public async static void DoRequest()
