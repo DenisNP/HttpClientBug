@@ -45,7 +45,8 @@ namespace HttpClientBug
             catch (Exception e)
             {
                 Console.WriteLine("Error, it doesn't work");
-                throw;
+                Console.WriteLine(e);
+                return;
             }
 
             string stringResponse = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
